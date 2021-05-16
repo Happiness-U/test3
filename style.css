@@ -1,0 +1,18 @@
+h1,
+h3{
+    text-align: center;
+}
+
+.item {
+    
+    margin: 20px;
+}
+body  {
+    background-color: rgb(5, 177, 177);
+}
+#mytitle:hover{
+    color: red;
+}
+
+
+    
