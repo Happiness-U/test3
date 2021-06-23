@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <title>box</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        position: relative; 
+        }
+    .wrapper{
+         margin-top: 10%;
+         width: 100%;
+         max-width: 350px;
+         padding: 40px 0 ;
+         text-align: center;
+         font-family: Verdana, Geneva, Tahoma, sans-serif
+         
+    } 
+    .form{
+        display: inline-flex;
+        
+    }
+    .pagination{
+       display: inline-flex;
+        margin-left: 1rem;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 2px 23px 2px rgba(168, 164, 164, 0.53);
+        -webkit-box-shadow: 1px 2px 23px 2px rgba(218, 207, 207, 0.53);
+        -moz-box-shadow: 1px 2px 23px 2px rgba(250, 248, 248, 0.938);
+        padding: 20px;
+    }
+    .rect{
+        padding: 15px;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 2px 23px 2px rgba(168, 164, 164, 0.53);
+        -webkit-box-shadow: 1px 2px 23px 2px rgba(230, 224, 224, 0.918);
+        -moz-box-shadow: 1px 2px 23px 2px rgba(223, 219, 219, 0.53);
+    }
+    .fas {
+        border: 1px solid rgba(104, 101, 101, 0.383);
+        border-radius: 100%;
+        cursor: pointer;
+        padding: 10px
+        
+    }
+    .fas:hover{
+        background-color: rgb(243, 239, 225);
+    }
+    .pagination > a {
+        border: 1px solid rgba(192, 185, 185, 0.74);
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: 3s;
+    }
+   
+    .pagination >a.active{
+        background-color: rgb(75, 158, 251);
+        border: none;
+        color: white;
+        margin-right: 10px;
+    }
+  
+    .space, 
+    .space1{
+        margin-right: 1rem;
+    }
+    a:hover{
+      background-color: rgb(189, 184, 165);
+    }
+  .bac{ 
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 2px 23px 2px rgba(168, 164, 164, 0.53);
+        -webkit-box-shadow: 1px 2px 23px 2px rgba(187, 180, 180, 0.53);
+        -moz-box-shadow: 1px 2px 23px 2px rgba(223, 219, 219, 0.53);
+        margin-top: 10%;
+        padding: 20px 10px 
+        
+    }
+    .get{
+        padding: 10% 15%;
+    }   
+     .get > a{ 
+     text-decoration: none;
+     background-color: rgb(75, 158, 251);
+     color: white;
+     padding: 10px 25px;
+     border-radius: 50px;
+    }
+    .exp{
+        padding-top:3rem;  
+    }
+    .exp > a {
+     text-decoration: none;
+     border: 1px solid rgba(41, 39, 39, 0.411);
+     padding: 10px 25px;
+     border-radius: 50px; 
+     color: black; 
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+     <div class="form">
+        <div class="rect">
+            <i class="fas fa-angle-left"></i>
+        </div>
+      <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#" class="space">2</a>
+            <a href="#" class="space1">3</a>
+      </div>
+     </div>
+        <div class="bac">
+         <div class="get">
+            <a href="#">Get your free offer</a>
+         <div class="exp">
+            <a href="#">Explore our FAQs</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
